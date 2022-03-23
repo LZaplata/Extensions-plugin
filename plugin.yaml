@@ -1,0 +1,6 @@
+plugin:
+    name: 'lzaplata.extensions::lang.plugin.name'
+    description: 'lzaplata.extensions::lang.plugin.description'
+    author: 'Lukáš Záplata'
+    icon: oc-icon-puzzle-piece
+    homepage: ''
