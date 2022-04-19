@@ -2,3 +2,5 @@
     - 'Plugin initialization'
 1.0.1:
     - 'Replace Markdown editor with Rich editor in Rainlab.Pages content files'
+1.0.2:
+    - 'Add Rainlab.Translate plugin dependency because of MLRichEditor'
