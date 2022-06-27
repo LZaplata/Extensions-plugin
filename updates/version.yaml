@@ -6,3 +6,5 @@
     - 'Add Rainlab.Translate plugin dependency because of MLRichEditor'
 1.0.3:
     - 'Rainlab.Translate plugin automatic installation'
+1.0.4:
+    - 'Automatic installation of Rainlab.Translate plugin specific version'
