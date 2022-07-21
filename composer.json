@@ -3,7 +3,6 @@
     "type": "october-plugin",
     "description": "Extensions for Rainlab.Pages and Rainlab.Blog plugins",
     "require": {
-        "composer/installers": "~1.0",
-        "rainlab/translate-plugin": "^1.11"
+        "composer/installers": "~1.0"
     }
 }

@@ -8,3 +8,5 @@
     - 'Rainlab.Translate plugin automatic installation'
 1.0.4:
     - 'Automatic installation of Rainlab.Translate plugin specific version'
+1.0.5:
+    - 'Remove Rainlab.Translate plugin dependency and replace default Rainlab.Pages and Rainlab.Blog editor with standard OctoberCMS richeditor'

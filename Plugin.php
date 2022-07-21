@@ -11,13 +11,6 @@ use System\Classes\PluginBase;
 class Plugin extends PluginBase
 {
     /**
-     * @var array Plugin dependencies
-     */
-    public $require = [
-        "Rainlab.Translate",
-    ];
-
-    /**
      * @return void
      */
     public function boot(): void
@@ -41,9 +34,8 @@ class Plugin extends PluginBase
             $widget->addSecondaryTabFields([
                 "content" => [
                     "tab" => "rainlab.blog::lang.post.tab_edit",
-                    "type" => "mlricheditor",
+                    "type" => "richeditor",
                     "stretch" => true,
-                    "toolbarButtons" => "paragraphFormat|bold|italic|align|formatOL|formatUL|insertTable|insertLink|insertImage|html"
                 ]
             ]);
         });
@@ -67,10 +59,9 @@ class Plugin extends PluginBase
             $widget->addSecondaryTabFields([
                 "markup" => [
                     "tab" => "rainlab.pages::lang.editor.content",
-                    "type" => "mlricheditor",
+                    "type" => "richeditor",
                     "stretch" => true,
                     "size" => "huge",
-                    "toolbarButtons" => "paragraphFormat|bold|italic|align|formatOL|formatUL|insertTable|insertLink|insertImage|html"
                 ]
             ]);
         });
@@ -94,11 +85,10 @@ class Plugin extends PluginBase
             $widget->addSecondaryTabFields([
                 "markup_html" => [
                     "tab" => "cms::lang.editor.content",
-                    "type" => "mlricheditor",
+                    "type" => "richeditor",
                     "stretch" => true,
                     "size" => "huge",
                     "valueFrom" => "markup",
-                    "toolbarButtons" => "paragraphFormat|bold|italic|align|formatOL|formatUL|insertTable|insertLink|insertImage|html"
                 ]
             ]);
         });
