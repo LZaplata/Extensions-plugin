@@ -1,5 +1,6 @@
 <?php namespace LZaplata\Extensions;
 
+use Backend\FormWidgets\RichEditor;
 use October\Rain\Support\Facades\Event;
 use RainLab\Blog\Controllers\Posts;
 use RainLab\Blog\Models\Post;
@@ -15,6 +16,13 @@ class Plugin extends PluginBase
      */
     public function boot(): void
     {
+        /**
+         * Adds custom stylesheet to modify default richeditor classes
+         */
+        RichEditor::extend(function ($widget) {
+            $widget->getController()->addCss("/plugins/lzaplata/extensions-bak/formwidgets/richeditor/assets/css/richeditor.css");
+        });
+
         /**
          * Replace Markdown editor with Rich editor in Rainlab.Blog post
          */
