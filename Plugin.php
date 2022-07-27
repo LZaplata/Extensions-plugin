@@ -20,7 +20,7 @@ class Plugin extends PluginBase
          * Adds custom stylesheet to modify default richeditor classes
          */
         RichEditor::extend(function ($widget) {
-            $widget->getController()->addCss("/plugins/lzaplata/extensions-bak/formwidgets/richeditor/assets/css/richeditor.css");
+            $widget->getController()->addCss("/plugins/lzaplata/extensions/formwidgets/richeditor/assets/css/richeditor.css");
         });
 
         /**
