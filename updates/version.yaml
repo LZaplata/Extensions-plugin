@@ -15,3 +15,6 @@ v1.1.0:
 v1.2.0:
     - 'Add paragraph style button to wysiwyg editor for LZaplata.Pages with Bootstrap alerts and buttons options'
     - backend_editor_settings.php
+v1.2.1:
+    - 'Small GDPR data seeder'
+    - small_gdpr.php

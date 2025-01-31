@@ -1,0 +1,125 @@
+cookies_manage_title: 'Nastavení cookies'
+cookies_manage_content: '<p>Na našem webu používáme cookies.</p><p>Některé z nich jsou k fungování stránek nezbytné, ale o těch ostatních můžete rozhodnout sami.</p>'
+cookies_bar_title: 'Nastavení cookies'
+cookies_bar_add_styles: '1'
+cookies_bar_content: '<p>Na našem webu používáme cookies.</p><p>Některé z nich jsou k fungování stránek nezbytné, ale o těch ostatních můžete rozhodnout sami.</p>'
+cookies:
+    -
+        title: 'Funkční cookies'
+        description: '<p>Funkční cookies pomáhají, aby webová stránka v pořádku fungovala.</p>'
+        slug: funkcni
+        required: '1'
+        default_enabled: '0'
+        default_modal_checked: '0'
+        scripts:
+            -
+                scripts_title: 'Google Analytics without consent'
+                scripts_file: ''
+                scripts_run_production: '1'
+                scripts_code: "<script async src='https://www.googletagmanager.com/gtag/js'></script>\n<script>window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\n// Denied storage before consent\ngtag('consent', 'default', {\n'ad_storage': 'denied',\n'analytics_storage': 'denied'\n});\ngtag('js', new Date());\n// GA4\ngtag('config', 'G-XXXXXXX');\n// GA3\ngtag('config', 'UA-XXXXXX-X', { 'anonymize_ip': true, 'forceSSL': true });\n</script>"
+                scripts_disable: '0'
+                scripts_run_pages: '0'
+                scripts_run_pages_list: null
+    -
+        title: 'Statistické cookies'
+        description: '<p>Anonymní statistické cookies pomáhají porozumět tomu, jak návštěvníci používají webové stránky.</p>'
+        slug: statisticke
+        required: '0'
+        default_enabled: '0'
+        default_modal_checked: '0'
+        scripts:
+            -
+                scripts_title: 'Google Analytics with consent'
+                scripts_file: ''
+                scripts_run_production: '1'
+                scripts_code: "<script>\ngtag('consent', 'update', {\n'analytics_storage': 'granted'\n});\n</script>"
+                scripts_disable: '0'
+                scripts_run_pages: '0'
+                scripts_run_pages_list: null
+    -
+        title: 'Marketingové cookies'
+        description: '<p>Používáme marketingové cookies abychom vám mohli zobrazovat relevantní reklamy na základě vašich zájmů na sociálních sítích a historie procházení webu.</p>'
+        slug: marketingove
+        required: '0'
+        default_enabled: '0'
+        default_modal_checked: '0'
+        scripts:
+            -
+                scripts_title: 'Google Analytics with consent'
+                scripts_file: ''
+                scripts_run_production: '1'
+                scripts_code: "<script>\ngtag('consent', 'update', {\n'ad_storage': 'granted',\n});\n</script>"
+                scripts_disable: '0'
+                scripts_run_pages: '0'
+                scripts_run_pages_list: null
+    -
+        title: 'Souhlas s marketingovými aktivitami'
+        description: '<p>Tento souhlas je určen pro zpracování Vašich osobních údajů za účelem cílené reklamy na základě first party dat v reklamních systémech jako je Facebook Ads, Google Ads, Sklik a pod.</p>'
+        slug: marketing_activities
+        required: '0'
+        default_enabled: '0'
+        default_modal_checked: '0'
+        scripts:
+            -
+                scripts_title: 'Google Analytics with consent'
+                scripts_file: ''
+                scripts_run_production: '0'
+                scripts_code: "<script>\ngtag(\"consent\", \"update\", {\n    ad_user_data: \"granted\"\n});\n</script>"
+                scripts_disable: '0'
+                scripts_run_pages: '0'
+                scripts_run_pages_list: null
+    -
+        title: 'Souhlas s personalizovanou reklamou'
+        description: '<p>Tento souhlas udělujete se účelem cílení/personalizování reklamy.</p>'
+        slug: personalization
+        required: '0'
+        default_enabled: '0'
+        default_modal_checked: '0'
+        scripts:
+            -
+                scripts_title: 'Google Analytics with consent'
+                scripts_file: ''
+                scripts_run_production: '0'
+                scripts_code: "<script>\ngtag(\"consent\", \"update\", {\n    ad_personalization: \"granted\"\n});\n</script>"
+                scripts_disable: '0'
+                scripts_run_pages: '0'
+                scripts_run_pages_list: null
+cookies_bar_buttons:
+    -
+        title: Přijmout
+        url: '#'
+        accept_all_cookies_btn: '1'
+        url_external: '0'
+        disable_all_cookies_btn: '0'
+        accept_all_cookies_btn_script: ''
+        css_class: 'btn btn-primary btn-sm'
+        html_attributes: ''
+        show_modal: '0'
+    -
+        title: Odmítnout
+        url: '#'
+        accept_all_cookies_btn: '0'
+        url_external: '0'
+        disable_all_cookies_btn: '1'
+        accept_all_cookies_btn_script: ''
+        css_class: 'btn btn-primary btn-sm'
+        html_attributes: ''
+        show_modal: '0'
+    -
+        title: Nastavení
+        url: gdpr
+        accept_all_cookies_btn: '0'
+        url_external: '0'
+        disable_all_cookies_btn: '0'
+        accept_all_cookies_btn_script: ''
+        css_class: 'btn btn-outline-light btn-sm'
+        html_attributes: ''
+        show_modal: '1'
+set_cookies_lifetime_days: 365
+ui_style: b5
+cookies_bar_css_class: ''
+cookies_bar_disable_page_reload: '0'
+cookies_manage_css_class: ''
+cookies_manage_disable_page_reload: '0'
+set_cookies_with_locale: '0'
+import_preset_media: ''
