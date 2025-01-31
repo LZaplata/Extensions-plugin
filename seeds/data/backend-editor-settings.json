@@ -1,0 +1,126 @@
+{
+    "html_toolbar_buttons": "",
+    "html_allow_empty_tags": "textarea, a, i, iframe, object, video, style, script, .icon, .bi, .fa, .fr-emoticon, .fr-inner, path, line",
+    "html_allow_tags": "a, abbr, address, area, article, aside, audio, b, base, bdi, bdo, blockquote, br, button, canvas, caption, cite, code, col, colgroup, datalist, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, i, iframe, img, input, ins, kbd, keygen, label, legend, li, link, main, map, mark, menu, menuitem, meter, nav, noscript, object, ol, optgroup, option, output, p, param, pre, progress, queue, rp, rt, ruby, s, samp, script, style, section, select, small, source, span, strike, strong, sub, summary, sup, table, tbody, td, textarea, tfoot, th, thead, time, title, tr, track, u, ul, var, video, wbr",
+    "html_no_wrap_tags": "figure, script, style",
+    "html_remove_tags": "script, style",
+    "html_line_breaker_tags": "figure, table, hr, iframe, form, dl",
+    "html_style_image": [
+        {
+            "class_label": "Rounded",
+            "class_name": "oc-img-rounded"
+        },
+        {
+            "class_label": "Bordered",
+            "class_name": "oc-img-bordered"
+        }
+    ],
+    "html_style_link": [
+        {
+            "class_name": "btn",
+            "class_label": "Button"
+        },
+        {
+            "class_name": "btn-primary",
+            "class_label": "- Primary"
+        },
+        {
+            "class_name": "btn-secondary",
+            "class_label": "- Secondary"
+        },
+        {
+            "class_name": "btn-info",
+            "class_label": "- Info"
+        },
+        {
+            "class_name": "btn-warning",
+            "class_label": "- Warning"
+        },
+        {
+            "class_name": "btn-danger",
+            "class_label": "- Danger"
+        },
+        {
+            "class_name": "btn-outline-primary",
+            "class_label": "- Outline Primary"
+        },
+        {
+            "class_name": "btn-outline-secondary",
+            "class_label": "- Outline Secondary"
+        },
+        {
+            "class_name": "btn-outline-info",
+            "class_label": "- Outline Info"
+        },
+        {
+            "class_name": "btn-outline-warning",
+            "class_label": "- Outline Warning"
+        },
+        {
+            "class_name": "btn-outline-danger",
+            "class_label": "- Outline Danger"
+        }
+    ],
+    "html_style_paragraph": [
+        {
+            "class_name": "alert",
+            "class_label": "Alert"
+        },
+        {
+            "class_name": "alert-primary",
+            "class_label": "- Primary"
+        },
+        {
+            "class_name": "alert-secondary",
+            "class_label": "- Secondary"
+        },
+        {
+            "class_name": "alert-info",
+            "class_label": "- Info"
+        },
+        {
+            "class_name": "alert-warning",
+            "class_label": "- Warning"
+        },
+        {
+            "class_name": "alert-danger",
+            "class_label": "- Danger"
+        }
+    ],
+    "html_style_table": [
+        {
+            "class_label": "Dashed Borders",
+            "class_name": "oc-dashed-borders"
+        },
+        {
+            "class_label": "Alternate Rows",
+            "class_name": "oc-alternate-rows"
+        }
+    ],
+    "html_style_table_cell": [
+        {
+            "class_label": "Highlighted",
+            "class_name": "oc-cell-highlighted"
+        },
+        {
+            "class_label": "Thick Border",
+            "class_name": "oc-cell-thick-border"
+        }
+    ],
+    "html_paragraph_formats": [
+        {
+            "format_label": "Normal",
+            "format_tag": "N"
+        },
+        {
+            "format_label": "Heading 2",
+            "format_tag": "H2"
+        },
+        {
+            "format_label": "Heading 3",
+            "format_tag": "H3"
+        }
+    ],
+    "html_custom_styles": "\/*\n * Text\n *\/\n.oc-text-gray {\n    color: #AAA !important;\n}\n.oc-text-bordered {\n    border-top: solid 1px #222;\n    border-bottom: solid 1px #222;\n    padding: 10px 0;\n}\n.oc-text-spaced {\n    letter-spacing: 1px;\n}\n.oc-text-uppercase {\n    text-transform: uppercase;\n}\n\n\/*\n * Links\n *\/\na.oc-link-strong {\n    font-weight: 700;\n}\na.oc-link-green {\n    color: green;\n}\n\n\/*\n * Table\n *\/\ntable.oc-dashed-borders td,\ntable.oc-dashed-borders th {\n    border-style: dashed;\n}\ntable.oc-alternate-rows tbody tr:nth-child(2n) {\n    background: #f5f5f5;\n}\n\n\/*\n * Table cell\n *\/\ntable td.oc-cell-highlighted,\ntable th.oc-cell-highlighted {\n    border: 1px double red;\n}\ntable td.oc-cell-thick-border,\ntable th.oc-cell-thick-border {\n    border-width: 2px;\n}\n\n\/*\n * Images\n *\/\nimg.oc-img-rounded {\n    border-radius: 100%;\n    background-clip: padding-box;\n}\nimg.oc-img-bordered {\n    border: solid 10px #CCC;\n    box-sizing: content-box;\n}",
+    "html_allow_attrs": ""
+}

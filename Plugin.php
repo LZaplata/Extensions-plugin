@@ -1,6 +1,9 @@
 <?php namespace LZaplata\Extensions;
 
 use Backend\FormWidgets\RichEditor;
+use Cms\Classes\Asset;
+use Cms\Classes\Theme;
+use LZaplata\Pages\Controllers\Pages;
 use October\Rain\Support\Facades\Event;
 use RainLab\Blog\Controllers\Posts;
 use RainLab\Blog\Models\Post;
@@ -18,9 +21,14 @@ class Plugin extends PluginBase
     {
         /**
          * Adds custom stylesheet to modify default richeditor classes
+         * Adds custom buttons to richeditor
          */
         RichEditor::extend(function ($widget) {
             $widget->getController()->addCss("/plugins/lzaplata/extensions/formwidgets/richeditor/assets/css/richeditor.css");
+
+            if ($widget->getController() instanceof Pages) {
+                $widget->getController()->addJs("/plugins/lzaplata/extensions/formwidgets/richeditor/assets/js/richeditor.js");
+            }
         });
 
         /**
@@ -41,9 +49,9 @@ class Plugin extends PluginBase
 
             $widget->addSecondaryTabFields([
                 "content" => [
-                    "tab" => "rainlab.blog::lang.post.tab_edit",
-                    "type" => "richeditor",
-                    "stretch" => true,
+                    "tab"               => "rainlab.blog::lang.post.tab_edit",
+                    "type"              => "richeditor",
+                    "stretch"           => true,
                 ]
             ]);
         });

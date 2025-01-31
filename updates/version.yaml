@@ -1,14 +1,17 @@
-1.0.0:
+v1.0.0:
     - 'Plugin initialization'
-1.0.1:
+v1.0.1:
     - 'Replace Markdown editor with Rich editor in Rainlab.Pages content files'
-1.0.2:
+v1.0.2:
     - 'Add Rainlab.Translate plugin dependency because of MLRichEditor'
-1.0.3:
+v1.0.3:
     - 'Rainlab.Translate plugin automatic installation'
-1.0.4:
+v1.0.4:
     - 'Automatic installation of Rainlab.Translate plugin specific version'
-1.0.5:
+v1.0.5:
     - 'Remove Rainlab.Translate plugin dependency and replace default Rainlab.Pages and Rainlab.Blog editor with standard OctoberCMS richeditor'
-1.1.0:
+v1.1.0:
     - 'Added custom stylesheet to modify default richeditor classes'
+v1.2.0:
+    - 'Add paragraph style button to wysiwyg editor for LZaplata.Pages with Bootstrap alerts and buttons options'
+    - backend_editor_settings.php
