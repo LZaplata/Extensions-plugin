@@ -18,3 +18,5 @@ v1.2.0:
 v1.2.1:
     - 'Small GDPR data seeder'
     - small_gdpr.php
+v1.3.0:
+    - 'Twig price filter'

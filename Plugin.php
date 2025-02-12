@@ -1,9 +1,9 @@
 <?php namespace LZaplata\Extensions;
 
 use Backend\FormWidgets\RichEditor;
-use Cms\Classes\Asset;
-use Cms\Classes\Theme;
+use Illuminate\Support\Facades\App;
 use LZaplata\Pages\Controllers\Pages;
+use NumberFormatter;
 use October\Rain\Support\Facades\Event;
 use RainLab\Blog\Controllers\Posts;
 use RainLab\Blog\Models\Post;
@@ -108,5 +108,34 @@ class Plugin extends PluginBase
                 ]
             ]);
         });
+    }
+
+    /**
+     * @return array
+     */
+    public function registerMarkupTags(): array
+    {
+        return [
+            "filters" => [
+                "price" => function (string $price, array $arguments = []): string {
+                    $currencies = [
+                        "cs"    => "CZK",
+                    ];
+
+                    $decimals = [
+                        "cs"    => 0,
+                    ];
+
+                    $locale = $arguments["locale"] ?? App::getLocale();
+                    $currency = $arguments["currency"] ?? $currencies[$locale] ?? "EUR";
+                    $currencyDecimals = $arguments["decimals"] ?? $decimals[$locale] ?? 2;
+
+                    $formatter = new NumberFormatter($locale, NumberFormatter::CURRENCY);
+                    $formatter->setAttribute(NumberFormatter::FRACTION_DIGITS, $currencyDecimals);
+
+                    return $formatter->formatCurrency($price, $currency);
+                },
+            ],
+        ];
     }
 }
