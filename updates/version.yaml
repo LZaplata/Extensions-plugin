@@ -20,3 +20,6 @@ v1.2.1:
     - small_gdpr.php
 v1.3.0:
     - 'Twig price filter'
+v1.4.0:
+    - 'Small contact form data seeder'
+    - small_contact_form.php
