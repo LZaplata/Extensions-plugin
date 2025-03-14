@@ -15,7 +15,7 @@ cookies:
             -
                 scripts_title: 'Google Analytics without consent'
                 scripts_file: ''
-                scripts_run_production: '1'
+                scripts_run_production: '0'
                 scripts_code: "<script async src='https://www.googletagmanager.com/gtag/js'></script>\n<script>window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\n// Denied storage before consent\ngtag('consent', 'default', {\n'ad_storage': 'denied',\n'analytics_storage': 'denied'\n});\ngtag('js', new Date());\n// GA4\ngtag('config', 'G-XXXXXXX');\n// GA3\ngtag('config', 'UA-XXXXXX-X', { 'anonymize_ip': true, 'forceSSL': true });\n</script>"
                 scripts_disable: '0'
                 scripts_run_pages: '0'
@@ -31,7 +31,7 @@ cookies:
             -
                 scripts_title: 'Google Analytics with consent'
                 scripts_file: ''
-                scripts_run_production: '1'
+                scripts_run_production: '0'
                 scripts_code: "<script>\ngtag('consent', 'update', {\n'analytics_storage': 'granted'\n});\n</script>"
                 scripts_disable: '0'
                 scripts_run_pages: '0'
@@ -47,7 +47,7 @@ cookies:
             -
                 scripts_title: 'Google Analytics with consent'
                 scripts_file: ''
-                scripts_run_production: '1'
+                scripts_run_production: '0'
                 scripts_code: "<script>\ngtag('consent', 'update', {\n'ad_storage': 'granted',\n});\n</script>"
                 scripts_disable: '0'
                 scripts_run_pages: '0'
