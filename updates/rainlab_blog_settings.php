@@ -4,6 +4,7 @@ namespace LZaplata\Extensions\Updates;
 
 use Illuminate\Support\Facades\DB;
 use October\Rain\Database\Updates\Seeder;
+use System\Helpers\Cache;
 
 class RainlabBlogSettings extends Seeder
 {
@@ -16,5 +17,7 @@ class RainlabBlogSettings extends Seeder
         ], [
             "value" => json_encode(json_decode($value)),
         ]);
+
+        Cache::clear();
     }
 }
