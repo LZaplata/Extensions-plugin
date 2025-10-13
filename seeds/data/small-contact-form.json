@@ -1,7 +1,7 @@
 {
     "form_css_class": "row g-4 contact-form",
-    "form_success_msg": "Vaše rezervace byla úspěšně odeslána.",
-    "form_error_msg": "Při odesílání rezervace nastaly chyby.",
+    "form_success_msg": "Kontaktní formulář byl úspěšně odeslán.",
+    "form_error_msg": "Při odesílání kontaktního formuláře nastaly chyby.",
     "form_hide_after_success": "0",
     "form_hide_after_success_visually": "0",
     "form_use_placeholders": "1",
@@ -119,7 +119,7 @@
             "field_values": null,
             "field_custom_code": "",
             "field_custom_code_twig": "0",
-            "field_custom_content": "<p class=\"mb-0\">Odesláním formuláře souhlasím se <a href=\"october:\/\/page@link\/13?cms_page=page\">zpracováním osobních údajů<\/a>.<\/p>",
+            "field_custom_content": "<p class=\"mb-0\">Odesláním formuláře souhlasím se <a href=\"october:\/\/page@link\/2?cms_page=page\">zpracováním osobních údajů<\/a>.<\/p>",
             "field_styling": "1",
             "autofocus": "0",
             "wrapper_css": "col-12",

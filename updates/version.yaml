@@ -28,3 +28,5 @@ v1.5.0:
     - rainlab_blog_settings.php
 v1.5.1:
     - 'Small GDPR data seeder change'
+v1.5.2:
+    - 'Small contact form seeder fixes'
