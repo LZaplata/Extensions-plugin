@@ -30,3 +30,5 @@ v1.5.1:
     - 'Small GDPR data seeder change'
 v1.5.2:
     - 'Small contact form seeder fixes'
+v1.6.0:
+    - 'Add Images tab with thumb, header_image, header_image_sm fields to RainLab Blog posts'

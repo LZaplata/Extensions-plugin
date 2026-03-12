@@ -11,6 +11,7 @@ use RainLab\Pages\Classes\Content;
 use RainLab\Pages\Classes\Page;
 use RainLab\Pages\Controllers\Index;
 use System\Classes\PluginBase;
+use System\Models\File;
 
 class Plugin extends PluginBase
 {
@@ -31,8 +32,15 @@ class Plugin extends PluginBase
             }
         });
 
+        Post::extend(function ($model) {
+            $model->attachOne["thumb"]           = File::class;
+            $model->attachOne["header_image"]    = File::class;
+            $model->attachOne["header_image_sm"] = File::class;
+        });
+
         /**
          * Replace Markdown editor with Rich editor in Rainlab.Blog post
+         * and add image fields on a dedicated Images tab
          */
         Event::listen("backend.form.extendFields", function ($widget) {
             if (!$widget->getController() instanceof Posts) {
@@ -47,12 +55,44 @@ class Plugin extends PluginBase
                 return;
             }
 
+            $widget->removeField("featured_images");
+
             $widget->addSecondaryTabFields([
                 "content" => [
-                    "tab"               => "rainlab.blog::lang.post.tab_edit",
-                    "type"              => "richeditor",
-                    "stretch"           => true,
-                ]
+                    "tab"           => "rainlab.blog::lang.post.tab_edit",
+                    "type"          => "richeditor",
+                    "stretch"       => true,
+                ],
+                "thumb" => [
+                    "tab"           => "lzaplata.extensions::lang.post.tab.images",
+                    "label"         => "lzaplata.extensions::lang.post.field.thumb",
+                    "type"          => "fileupload",
+                    "mode"          => "image",
+                    "span"          => "left",
+                ],
+                "header_image_sm" => [
+                    "tab"           => "lzaplata.extensions::lang.post.tab.images",
+                    "label"         => "lzaplata.extensions::lang.post.field.header_image_sm",
+                    "type"          => "fileupload",
+                    "mode"          => "image",
+                    "span"          => "left",
+                ],
+                "header_image" => [
+                    "tab"           => "lzaplata.extensions::lang.post.tab.images",
+                    "label"         => "lzaplata.extensions::lang.post.field.header_image",
+                    "type"          => "fileupload",
+                    "mode"          => "image",
+                    "span"          => "auto",
+                ],
+                "featured_images" => [
+                    "tab"           => "lzaplata.extensions::lang.post.tab.images",
+                    "label"         => "rainlab.blog::lang.post.featured_images",
+                    "span"          => "full",
+                    "type"          => "fileupload",
+                    "mode"          => "image",
+                    "imageWidth"    => 200,
+                    "imageHeight"   => 200,
+                ],
             ]);
         });
 
