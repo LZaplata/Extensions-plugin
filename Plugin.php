@@ -89,7 +89,7 @@ class Plugin extends PluginBase
                 ],
                 "featured_images" => [
                     "tab"           => "lzaplata.extensions::lang.post.tab.images",
-                    "label"         => "rainlab.blog::lang.post.featured_images",
+                    "label"         => "lzaplata.extensions::lang.post.field.featured_images",
                     "span"          => "full",
                     "type"          => "fileupload",
                     "mode"          => "image",

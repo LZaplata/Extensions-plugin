@@ -11,6 +11,7 @@
             "thumb"           => "Náhledový obrázek",
             "header_image"    => "Obrázek hlavičky",
             "header_image_sm" => "Obrázek hlavičky (mobil)",
+            "featured_images" => "Doporučené obrázky",
         ],
     ],
 ];

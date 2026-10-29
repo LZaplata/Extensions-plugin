@@ -11,6 +11,7 @@
             "thumb"           => "Thumbnail image",
             "header_image"    => "Header image",
             "header_image_sm" => "Header image (mobile)",
+            "featured_images" => "Featured images",
         ],
     ],
 ];
