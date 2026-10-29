@@ -57,9 +57,12 @@ class Plugin extends PluginBase
 
             $widget->removeField("featured_images");
 
-            $widget->addSecondaryTabFields([
+            /**
+             * RainLab.Blog 2.x defines post fields as primary tabs
+             */
+            $widget->addTabFields([
                 "content" => [
-                    "tab"           => "rainlab.blog::lang.post.tab_edit",
+                    "tab"           => "Edit",
                     "type"          => "richeditor",
                     "stretch"       => true,
                 ],

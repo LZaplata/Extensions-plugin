@@ -32,3 +32,5 @@ v1.5.2:
     - 'Small contact form seeder fixes'
 v1.6.0:
     - 'Add Images tab with thumb, header_image, header_image_sm fields to RainLab Blog posts'
+v1.6.1:
+    - 'Fix RainLab Blog 2.x post form (fields moved to primary tabs)'
