@@ -34,3 +34,5 @@ v1.6.0:
     - 'Add Images tab with thumb, header_image, header_image_sm fields to RainLab Blog posts'
 v1.7.0:
     - 'Fix RainLab Blog 2.x post form (fields moved to primary tabs), featured images label'
+v1.7.1:
+    - 'Fix rich editor height in RainLab Blog 2.x post form'

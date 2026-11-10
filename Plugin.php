@@ -64,7 +64,8 @@ class Plugin extends PluginBase
                 "content" => [
                     "tab"           => "Edit",
                     "type"          => "richeditor",
-                    "stretch"       => true,
+                    "span"          => "adaptive",
+                    "cssClass"      => "field-slim",
                 ],
                 "thumb" => [
                     "tab"           => "lzaplata.extensions::lang.post.tab.images",
